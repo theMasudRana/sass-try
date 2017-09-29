@@ -1,21 +1,78 @@
-$white-bg: #ffffff;
-$gray-bg: #f6f6f6;
-$dark-color: #232323;
-$theme-color: #ffce3e;
+// Variables
+$deepBlue: #032f3e;
+$white: #ffffff;
+$gray: #f5f5f5;
+$dark: #000;
 
 
 
-.main-menu {
+
+// Reset css
+body, {
 	margin: 0;
 	padding: 0;
-	li {
-		list-style: none;
-		display: inline-block;
-		a {
-			color: $theme-color;
-		}
-	}
+	box-sizing: border-box;
 }
-.tt {
-	margin: 0;
+body {
+  font-family: arial;
+  background: $white;
+}
+
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+
+// Styles
+.clearfix {
+	position: relative
+}
+.clearfix:befor {
+	content: '';
+	display: table;
+	clear: both;
+}
+.clearfix:after {
+	clear: both;
+	display: table;
+	content: "";
+}
+.header-area {
+	background: $white;
+	border-bottom: 1px solid $gray;
+}
+.logo {
+	width: 33.334%;
+	float: left;
+}
+.main-menu-area {
+	width: 66.665%;
+	float: left 
+}
+// Slider header
+.slider-area {
+	min-height: 100px;
+	background: url(../img/slider/1.jpg);
+	background-position: center center;
+	background-size: cover;
+	padding: 200px 0;
+}
+.main-menu {
+	
 }
