@@ -398,8 +398,11 @@ h3 {
   color: #ffffff; }
 
 .header-area {
-  background: #222831;
-  overflow: hidden; }
+  background: #222831; }
+  .header-area:after {
+    content: '';
+    clear: both;
+    display: block; }
 
 .logo-area {
   width: 40%;

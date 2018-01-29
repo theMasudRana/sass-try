@@ -15,7 +15,11 @@ h3 {
 // Header area
 .header-area {
 	background: $headerBackground;
-	overflow: hidden;
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
 }
 .logo-area {
 	width: 40%;
