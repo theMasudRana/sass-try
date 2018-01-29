@@ -1,0 +1,53 @@
+// Imported files
+@import 'normalize';
+@import 'variable';
+
+
+/*Body Styles*/
+body {
+	font-family: $fontBody;
+}
+h3 {
+	font-family: $fontHeading;
+	color: $colorWhite;
+}
+
+// Header area
+.header-area {
+	background: $headerBackground;
+	overflow: hidden;
+}
+.logo-area {
+	width: 40%;
+	float: left;
+}
+.menu-area {
+	width: 60%;
+	float: left;
+}
+.main-menu {
+	display: flex;
+	justify-content: space-around;
+	li {
+		list-style: none;
+	}
+	a {
+		color: $colorWhite;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 1px;
+		transition: all .3s ease-in-out 0s;
+		&:hover {
+			color: $hoverColor;
+		}
+	}
+}
+// Banner area
+.banner-area {
+	max-height: 300px;
+	color: $hoverColor;
+	img {
+		width: 100%;
+	}
+}
